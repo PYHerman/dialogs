@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <dialog1/>
+<!--    <dialog2/>-->
+<!--    <dialog3/>-->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import dialog1 from './components/dialog1'
+import dialog2 from './components/dialog2'
+import dialog3 from './components/dialog3'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+
+    dialog1,
+    dialog2,
+    dialog3,
   }
 }
 </script>
@@ -23,6 +29,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+
+
 }
+  body{
+    margin: 0;
+  }
 </style>
