@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <dialog1></dialog1>
-<!--    <dialog2></dialog2>-->
-<!--    <dialog3></dialog3>-->
+    <dialog2></dialog2>
+    <dialog3></dialog3>
   </div>
 </template>
 

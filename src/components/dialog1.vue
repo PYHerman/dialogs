@@ -8,7 +8,7 @@
             </span>
         </div>
 
-        <img id="contentImage" :src="contentImageUrl" alt="图片缺失" />
+        <a :href=contentUrl ><img id="contentImage" :src="contentImageUrl" alt="图片缺失" /></a>
     </div>
 
 </template>
@@ -25,9 +25,10 @@
                 dialogVisible: false,
                 title:"广联达资讯",
                 iconImageSrc:iconImageBase64?iconImageBase64
-                                            :iconImageUrl,
+                    :iconImageUrl,
                 contentImageUrl:contentImageUrl,
-                };
+                contentUrl:"https://www.baidu.com",
+            };
         },
 
         component:{
@@ -45,11 +46,17 @@
         display:flex;
         flex-wrap:wrap;
         justify-content: center;
+
+        margin:10px;
+        border:2px #409eff solid;
+        border-radius: 4px;
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
     }
     #header{
         display:flex;
         justify-content: space-between;
         align-items: center;
+        padding:0 1%;
         width:100%;
         background-color: #409eff;
         color:white;
@@ -60,11 +67,10 @@
     }
     #contentImage{
         width:100%;
-        height:100%;
-        flex:1 100%;
-
     }
-
+    a{
+        width:100%;
+    }
 
 
 </style>
