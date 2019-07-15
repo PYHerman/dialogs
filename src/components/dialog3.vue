@@ -18,7 +18,7 @@
 
 <script>
     export default {
-        name:'dialog3',
+        name:'dig3',
         data() {
             return {
                 dialogVisible: false

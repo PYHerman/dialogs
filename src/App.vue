@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <dialog1/>
-<!--    <dialog2/>-->
-<!--    <dialog3/>-->
+    <dialog1></dialog1>
+<!--    <dialog2></dialog2>-->
+<!--    <dialog3></dialog3>-->
   </div>
 </template>
 
@@ -14,10 +14,10 @@ import dialog3 from './components/dialog3'
 export default {
   name: 'app',
   components: {
-
     dialog1,
     dialog2,
     dialog3,
+
   }
 }
 </script>
